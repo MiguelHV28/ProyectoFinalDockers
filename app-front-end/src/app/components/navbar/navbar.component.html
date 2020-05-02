@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://cdn0.iconfinder.com/data/icons/siberian-husky-emoticons-1/512/Naughty-Emoji-Emotion-Face-Expression-Feeling-512.png" width="40" height="40" alt="">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item "  routerLinkActive="active" >
+          <a class="nav-link" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item " routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/products']">Products <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item " routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/about']">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item " routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/paises']">Paises <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Settings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." 
+        aria-label="Buscar..." #txtSearch (keyup.enter)="search(txtSearch.value)">
+        <button class="btn btn-outline-primary my-2 my-sm-0" 
+        (click)="search(txtSearch.value)"
+        type="button">Buscar</button>
+      </div>
+      
+    </div>
+    
+  </nav>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#"><i class="fa {{breadcrumb.icon}}"></i>{{breadcrumb.title}}</a></li>
+    </ol>
+  </nav>

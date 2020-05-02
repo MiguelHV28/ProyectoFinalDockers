@@ -1,0 +1,15 @@
+<button type="button" class="btn btn-success m-3" [routerLink]="['/home']">Regresar a Home</button>
+
+<div class="text-center">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories','Cars']" routerLinkActive="active" >Autos</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories','Buses']" routerLinkActive="active">Camionetas</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories','Motorcycles']" routerLinkActive="active">Motocicletas</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories','Ships']" routerLinkActive="active">Botes</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories','Planes']" routerLinkActive="active">Aviones</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['categories','Trains']" routerLinkActive="active">Trenes</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,12 @@
+<div class="card-columns m-3">
+    <div class="card" *ngFor="let item of products">
+      <img src="assets/images/productos/{{item.codigo}}.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.descripcion}}</h5>
+        <p class="card-text">{{item.categoria}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <button class="btn btn-primary" [routerLink]="['/product',item.codigo,category,'categories']">Ver Producto</button> 
+        <button class="btn btn-danger" (click)="redirect(item.precio)">Redirect</button>
+      </div>
+    </div>
+</div>
