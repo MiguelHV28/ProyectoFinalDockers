@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { ProductoM, Respuesta } from '../models/models';
 import { Observable } from 'rxjs';
 
-const URL_PRODUCTS='http://localhost:8001/products';
-const URL_PRODUCTSCODIGO='http://localhost:8001/product/';
-const URL_PRODUCTSCATEGORIA='http://localhost:8001/productsByCategoria/';
-const URL_PRODUCTSBYDESCRIPCION='http://localhost:8001/productsByDescripcion/';
+const URL_PRODUCTS='http://192.168.9.136:8001/products';
+const URL_PRODUCTSCODIGO='http://192.168.9.136:8001/product/';
+const URL_PRODUCTSCATEGORIA='http://192.168.9.136:8001/productsByCategoria/';
+const URL_PRODUCTSBYDESCRIPCION='http://192.168.9.136:8001/productsByDescripcion/';
 
 @Injectable({
   providedIn: 'root'
